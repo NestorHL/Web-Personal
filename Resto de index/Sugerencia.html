@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles\styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Black+Ops+One&display=swap" rel="stylesheet">
+    <title>Mi Página Web</title>
+</head>
+<body>
+    <header>
+        <h1>Sugerencia</h1>
+    </header>
+    <nav id="menu">
+        <a href="../index.html">Inicio</a>
+        <a href="../Resto de index/Años.html">Ganadores por año</a>
+        <a href="../Resto de index/Sugerencia.html">Sugerencias</a>
+        <span class="indicador" id="indicador"></span>
+    </nav>
+    <div id = "datos">
+    <div id="texto">
+    <form>
+        <h2>¿Qué opinas?</h2>
+        <label for="nombre1">¿Cuál es tu juego preferido?</label>
+        <input type="text" id="preferido" name="preferido" pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+" required>
+        <br><br>
+        <label for="apellidos1">¿De qué trata?</label>
+        <input type="text" id="trata" name="trata" pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+" required>
+        <br><br>
+        <label for="email1">¿Cuánto jugaste?</label>
+        <input type="text" id="jugaste" name="jugaste" pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+" required>
+        <br><br>
+        <label for="telefono1">¿Por qué te gusta?:</label>
+        <input type="text" id="gusta" name="gusta" pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+" required>
+        <br><br>
+        <label for="ciudad1">¿Cuál es su genero?</label>
+        <input type="text" list="genero" name="genero">
+        <datalist id="genero">
+            <option value="Terror"></option>
+            <option value="RPG"></option>    
+            <option value="Plataformas"></option>
+            <option value="Suspense"></option>
+            <option value="FPS"></option>
+            <option value="Acción"></option>
+            <option value="Rol"></option>
+        </datalist>
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    </div>
+        <div id="texto">
+        <form>
+            <h2>Crea tu cuenta</h2>
+            <label for="nombre">*Nombre:</label>
+            <input type="text" id="nombre" name="nombre" pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+" required>
+            <br><br>
+            <label for="apellidos">*Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+" required>
+            <br><br>
+            <label for="email">*Correo electrónico:</label>
+            <input type="text" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+            <br><br>
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" pattern="[0-9]+">
+            <br><br>
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" list="text_editors"  name="ciudad">
+            <datalist id="text_editors">
+                <option value="Málaga"></option>
+                <option value="Madrid"></option>    
+                <option value="Barcelona"></option>
+                <option value="Sevilla"></option>
+                <option value="Valencia"></option>
+                <option value="Zaragoza"></option>
+                <option value="Bilbao"></option>
+                <option value="Islas Canarias"></option>
+                <option value="Islas Baleares"></option>
+                <option value="Otro, escríbelo"></option>
+            </datalist>
+            <br><br>
+            <div>
+                <label for="sugerencias">Escribe tus sugerencias:</label>
+                <textarea id="sugerencias" name="sugerencias" rows="4" cols="50" placeholder="Comparte tus ideas y sugerencias aquí"></textarea>
+            </div>
+            <br><br>
+            <label>
+                <input type="checkbox" name="terminos" value="terminos" required> Se va a proceder a la recogida de datos <br> de usuario para su almacenamiento en una base de datos
+            </label>
+            <h4> Los simbolos * indican las preguntas obligatorias</h4>
+            <input type="submit" value="Enviar">
+        </form>
+        </div>
+        <div id="texto">
+            <form>
+                <h2>¿Qué has aprendido?</h2>
+                <h4>1: ¿Quién fue el ganador en 2017?</h4>
+                <label>
+                    <input type="radio" name="juego" value="The Legend of Zelda: Breath of the Wild">"The Legend of Zelda: BOTW"
+                </label>
+                <br></br>
+                <label>
+                    <input type="radio" name="juego" value="GTA San Andreas"> GTA San Andreas
+                </label>
+                <br></br>
+                <label>
+                    <input type="radio" name="juego" value="Uncharted 2: El reino de los ladrones"> Uncharted 2: El reino de los ladrones
+                </label>
+                
+                <h4>2:¿Cómo se llama el protagonista de Uncharted 2?</h4>
+                <label>
+                    <input type="radio" name="Prota" value="Nathan Drake"> Nathan Drake
+                </label>
+                <br></br>
+                <label>
+                    <input type="radio" name="Prota" value="CJ"> CJ (Carl Johnson)
+                </label>
+                <br></br>
+                <label>
+                    <input type="radio" name="Prota" value="Electrónica"> John Marston
+                </label>
+                
+                <h4>3: The Last Of Us: II, ¿En que año gano? </h4>
+                <label>
+                    <input type="radio" name="año" value="2020"> 2020
+                </label>
+                <label>
+                    <input type="radio" name="año" value="2018"> 2018
+                </label>
+                <label>
+                    <input type="radio" name="año" value="2010"> 2010
+                </label>
+                <br><br>
+                <input type="submit" value="Enviar">
+            </form>
+            </div>
+    </div>
+</body>
+</html>

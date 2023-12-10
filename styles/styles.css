@@ -1,0 +1,246 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    font-family: 'Black Ops One', sans-serif;
+    font-size: 20px;
+}
+h4{
+    color:#333;
+}
+
+/* imagen de fondo de cada pagina */
+.GAME{
+    background-image:url("../imagenes/GOTY.jpg");
+    background-size: fixed;
+    width: 100%;
+    background-repeat:no-repeat;
+    background-position: center center; 
+    background-size: cover; 
+    background-attachment: fixed;
+    
+}
+.Años {
+    background-image:url("../imagenes/mando.jpg");
+    background-size: fixed;
+    width: 100%;
+    background-repeat:no-repeat;
+    background-position: center center; 
+    background-size: cover; 
+    background-attachment: fixed;
+}
+
+/* Cabecera */
+header {
+    background-color: #070743;
+    text-align: left;
+    padding:0.5em;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'Black Ops One', sans-serif;
+}
+
+/* Navegador */
+nav {
+	background: #027fe9;
+	height: 80px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	display: flex;
+	position: sticky;
+	top: 0;
+	overflow: hidden;
+}
+
+nav a {
+	flex: 1;
+	height: 100%;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #000;
+	transition: .2s ease-in-out all;
+	font-weight: 500;
+}
+
+nav a:hover {
+	background: #f0f0f0;
+}
+
+nav .indicador {
+	width: 0px;
+	height: 7px;
+	background: #113cfc;
+	position: absolute;
+	bottom: 0;
+	transition: .3s ease-out all;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.color{
+    color: white;
+}
+
+/* Imagenes */
+#imagenes{
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #00caf8;
+    text-align: center;
+    max-width: 100%;
+    display: block;
+}
+/* Formularios */
+#DatosPersonales{
+    color:white;
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color:gray;
+    text-align: center;
+    max-width: 100%;
+}
+
+#centrarvideo{
+    text-align: center;
+}
+
+/* texto */
+#texto{
+    margin: 15px;
+    color: black;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #85aab0;
+    text-align: justify;
+    max-width: 100%;
+    display: block;
+}
+
+/* Contenedores */
+div{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+/* Videos */
+video{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 15px;
+    width: 720px;
+    height:360px;  
+}
+
+
+/* Vista de movil */
+@media (width <= 768px){
+    div{
+        display: block;
+        justify-content: space-between;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #texto{
+        margin: 15px;
+        color: black;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: #85aab0;
+        text-align: center;
+        max-width: 100%;
+        display: block;
+    }
+    video{
+        margin: 15px;
+        width: 360px;
+        height:260px;
+        justify-content: center;
+        align-items: center; 
+        text-align: center;
+        
+    }
+    #imagenes{
+        margin: 15px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: #00caf8;
+        text-align: center;
+        max-width: 100%;
+    }
+    body{
+        background-size: cover;
+    }
+}
+/* Vista de tablet */
+@media (768px <= width <= 1024px){
+    div{
+        justify-content: space-between;
+        max-width: 100%;
+        display: block;
+        text-align: justify;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    #texto{
+        margin: 15px;
+        color: black;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: #85aab0;
+        text-align: center;
+        max-width: 100%;
+        display: block;
+    }
+    video{
+        margin: 15px;
+        width: 450px;
+        height:300px;  
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    body{
+        background-size: cover;
+        text-align: justify;
+    }
+  }
+}
